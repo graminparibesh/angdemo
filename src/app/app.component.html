@@ -1,0 +1,51 @@
+<hr>
+<h1>
+  I am {{name}} and I am learning {{tech}}
+</h1>
+<br>
+<hr>
+<br>
+<h2>Event binding!!!</h2>
+<button (click)="display()" style="margin:20px">Click Me</button>
+
+<hr>
+<br>
+<label>
+  User Name :-
+  <input type="text"[formControl]="uname">
+</label>
+<p>
+  User Name is {{uname.value}}
+</p>
+<p>
+  <button (click)="updateName()" style="margin:20px">Update User Name to Amitava</button>
+</p>
+<br>
+<h1>Displaying Stuti Mobile Shop(SMS)</h1>
+
+<br>
+
+<table border="1" cellPadding="5">
+
+  <tr>
+    <td>Mobile Brand</td>
+    <td>Mobile Price</td>
+    <td>Mobile Stock</td>
+  </tr>
+  <tr *ngFor="let m of products">
+    <td>{{m.name}}</td>
+    <td>{{m.price}}</td>
+    <td>{{m.stock}}</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<h2><u>Saptarshicomponent is shown below!!!!</u></h2>
+<br>
+<app-saptarshicomponent></app-saptarshicomponent>
+
+
+
+
+
